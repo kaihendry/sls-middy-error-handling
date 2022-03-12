@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@middy/core": "^2.5.7",
+    "@schibsted/middy-error-handler": "^3.0.0",
+    "http-errors": "^2.0.0",
+    "lambda-log": "^3.1.0"
+  }
+}
