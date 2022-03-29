@@ -6,6 +6,10 @@ provider:
   runtime: nodejs14.x
   region: ap-southeast-1
 
+constructs:
+  profile:
+    type: storage
+
 functions:
   hello:
     handler: handler.handler
@@ -13,3 +17,8 @@ functions:
       - httpApi:
           path: /
           method: get
+    environment:
+      MIDDY_PROFILER_S3_BUCKET_NAME: ${construct:profile.bucketName}
+
+plugins:
+  - serverless-lift
