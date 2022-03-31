@@ -17,3 +17,5 @@ https://github.com/serkan-ozal/middy-profiler
 <img src="https://s.natalian.org/2022-03-29/1648528442_1918x1047.png">
 
 Example https://s.natalian.org/2022-03-29/cpu_profile.cpuprofile
+
+Acknowledgments: [Piotr Grzesik](https://github.com/serverless/serverless/discussions/10907#discussioncomment-2451146)
