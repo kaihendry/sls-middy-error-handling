@@ -1,5 +1,7 @@
 LAMBDA=hello
 
+invokelocalevent:
+	serverless invoke local --function $(LAMBDA) --stage dev -p event.json
 
 invokelocal:
 	serverless invoke local --function $(LAMBDA)
