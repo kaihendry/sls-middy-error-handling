@@ -11,9 +11,10 @@ const log = new LambdaLog({
   tags: ["foo"],
 });
 
-const baseHandler = async (event) => {
+const baseHandler = async (event, context) => {
   log.info("waiting a second", {
     bucket: process.env.MIDDY_PROFILER_S3_BUCKET_NAME,
+    context,
   });
   await new Promise((resolve) => setTimeout(resolve, 1000));
   log.info("done waiting");
